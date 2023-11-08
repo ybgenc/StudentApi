@@ -15,8 +15,7 @@ namespace StudentApı.Repositories
             var students = context.Student
                                    .Select(s => new Student
                                    {
-                                       // Burada Student sınıfının tüm özelliklerini doldurarak veritabanından sadece gerekli alanları çekebilirsiniz.
-                                       // Örnek olarak:
+               
                                        FirstName = s.FirstName,
                                        lastName = s.lastName,
                                        Email = s.Email,
